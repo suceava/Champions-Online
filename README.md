@@ -1,1 +1,1 @@
-Champions Online
+Champions Online character builder
