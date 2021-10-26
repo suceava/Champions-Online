@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+
+    <div class="logo">
+        <div class="header_label header_left bada">
+            <a id="homeLink" href="/">Home</a>
+        </div>
+        <img src="/images/champions_logo.png" />
+    </div>
+
+    <div id="about">
+        <h2 class="bada">About This Site</h2>
+        <p>
+            This website is designed for players of the Massively Multiplayer game 
+            <i><a href="http://www.champions-online.com" target="_blank">Champions Online</a></i>.
+            <i>Champions Online</i> has many character development choices available, 
+            and the purpose of this website is to act as a ‘character builder’, 
+            which allows users to plan out their characters through a powerful web interface.
+        </p>
+        <p>
+            This website is best viewed using a modern browser that supports CSS3 (Firefox 3.6+, Chrome 7+, Safari 5+, IE 9+).
+        </p>
+        <p>
+            This website is fan-made and is not officially associated with <i>Champions Online</i>.  
+            Champions Online is a trademark of <a href="http://www.crypticstudios.com/" target="_blank">Cryptic Studios</a>.
+        </p>
+
+        <h2 class="bada">How to use the builder</h2>
+        <p>
+            The builder contains two main sections: the left-hand section which shows the currently purchased options for your build, 
+            and the right-hand section which shows all the available options for the selected category.
+        </p>
+        <p>
+            You can navigate the categories in the left-hand section by clicking the category headers (e.g. Purchase Powers),
+            which causes the right-hand section to display the appropriate options for that category.
+            You can click the options in the right-hand section to view a description of the option, and then you can purchase that option
+            by clicking the 'Purchase Power' button.  The 'Purchase Power' button may not always be enabled, indicating that the option has other
+            requirements or that you don't have enough points to purchase it.
+        </p>
+        
+        <h2 class="bada">Reporting issues with the site</h2>
+        <p>
+            We do our best to keep the data in the builder as accurate as possible, however, in the event that you may find any
+            errors with any of the data (powers, talents, etc.), or any other issues with the site, or just want to send us
+            any feedback, please <a href="mailto:championsonline@thrillcloud.com">contact us</a> using this link or the 'Contact' link on the front page.
+        </p>
+    </div>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#homeLink').attr('href', '/' + window.location.hash);
+    });
+    </script>
